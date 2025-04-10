@@ -1,0 +1,88 @@
+.about-page {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fafafa;
+  direction: rtl; /* اتجاه من اليمين لليسار */
+}
+
+.container{
+  margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: right;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  /* width: 100%;  */
+}
+
+.about-section h3 {
+  font-size: 22px;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  padding-right: 25px;
+  position: relative;
+  text-align: right;
+}
+
+.about-section ul li::before {
+  content: "✔";
+  position: absolute;
+  right: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px;
+    max-width: 100%; /* يأخذ العرض الكامل للشاشة */
+    /* margin: 0 10px; */
+  }
+
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+
+  .about-section ul li {
+    font-size: 16px;
+  }
+}

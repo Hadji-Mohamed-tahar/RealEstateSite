@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #ff6600;
+  --text-color: #ffffff;
+  --bg-gradient: linear-gradient(135deg, #2c3e50, #4ca1af);
+  --section-title-size: 22px;
+  --transition-duration: 0.3s;
+}
+
+.footer {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  padding: 50px 0;
+  margin: 50px auto;
+  direction: rtl;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* إزالة الخلفية المطلقة لتناسب عرض الـ Container */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: right;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 15px;
+}
+
+.footer-section h3 {
+  font-size: var(--section-title-size);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: border-color var(--transition-duration) ease;
+}
+
+.footer-section h3:hover {
+  border-color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) ease, transform var(--transition-duration) ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+/* استجابة العرض على الأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+}

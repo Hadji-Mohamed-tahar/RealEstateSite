@@ -1,0 +1,33 @@
+.property-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-info h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.property-price {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.property-location {
+  color: #666;
+  font-size: 14px;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+.property-card-link {
+  text-decoration: none;
+  color: inherit;
+}
